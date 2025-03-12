@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form (Lab4 Task1)</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form id="myForm">
+        <h1>Validation Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+        <p class="error" id="nameError"></p>
+
+        <label for="cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" placeholder="XXXXX-XXXXXXX-X" maxlength="15" />
+        <p class="error" id="cnicError"></p>
+        <button type="button" id="submit">Submit</button>
+    </form>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
+

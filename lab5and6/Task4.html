@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5and6 lab4</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgoldenrod;
+        }
+
+        .box{
+            font-size: 3em;
+            background-color:gainsboro;
+            padding: 20px 50px 20px 50px;
+            border: 2px solid rgb(191, 188, 188);
+            width: 100%;
+            text-align: center;
+        }
+
+        @media screen and (max-width:600px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 4: Create a responsive flexbox using CSS Media Queries Library. On desktop the images must 
+    be horizontal and on mobile images must be vertical. Use images instead of numbers. -->
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

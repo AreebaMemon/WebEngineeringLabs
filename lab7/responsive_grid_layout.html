@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7 Task1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Task 1: Building a Responsive Grid Layout.
+    Create a new HTML file named responsive_grid_layout.html and open it in your preferred text editor.
+    Use Bootstrap's grid system to create a responsive grid layout with multiple rows and columns.
+    Experiment with different grid classes such as container, row, col, col-sm, colmd, col-lg, 
+    and col-xl to define the layout for different screen sizes.
+    Add content and styling to the grid layout using Bootstrap components and utilities.
+    Save the HTML file and open it in a web browser to observe the responsiveness of the grid layout -->
+
+    <div class="container text-center">
+      <h2 class="text-center">Responsive Grid Layout</h2>
+
+      <div class="row">
+        <div class="col-12 bg-danger text-white p-4">Header</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 bg-primary text-white p-5">Content</div>
+        <div class="col-sm-12 col-md-6 bg-secondary text-white p-5">Aside</div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 bg-success text-white p-4">Footer</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

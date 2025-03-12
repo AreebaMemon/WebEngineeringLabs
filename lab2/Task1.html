@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2 Task1</title>
+</head>
+<body>
+    <!-- 
+     Save your audio and video files in a new directory on your computer.
+     Create a new HTML file in the same directory, called index.html.
+     Add <audio> and <video> elements to the page; make them display thedefault browser controls. 
+     Give both of them <source> elements so that browsers will find the audio format they support best 
+     and load it. These should include type attributes.Give the <video> element a poster that will be 
+     displayed before the video starts to be played.Play the video along with subtitles added to it -->
+
+    <h3>Video</h3>
+    <video src="sample.mp4" poster="sample.png" controls width="500">
+        <track src="sample.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+    
+    <br>
+     <h3>Audio</h3>   
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+    </audio> 
+</body>
+</html>
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5and6 Task3</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 0px 0px 20px;
+        }
+
+        img{
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .box1{
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 600px){
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 3: Designing a Card Layout
+    Create a new HTML file named card_layout.html and open it in your preferred text editor.
+    Define a card layout structure using HTML elements such as div for cards and img, h2, and p
+    for card content.
+    Apply CSS styles to the card layout to turn it into a flex container with a gridlike layout 
+    using Flexbox properties such as flex-wrap, justifycontent, and align-items.
+    Experiment with different configurations of Flexbox properties to create a visually appealing
+    card layout with consistent spacing and alignment. -->
+
+    <h1>Featured Destinations</h1>
+    <div class="container">
+        <div class="box">
+        <img src="photo-1519681393784-d120267933ba.jpg" alt="Mountain Retreat">
+        <div class="box1">
+        <h2>Mountain Retreat</h2>
+        <p>A peaceful getaway nestled in the mountains with breathtaking views.</p>
+    </div>
+    </div>
+    
+
+    <div class="box">
+        <img src="photo-1519681393784-d120267933ba.jpg" alt="Coastal Paradise">
+        <div class="box1">
+        <h2>Coastal Paradise</h2>
+        <p>Experience the perfect beach vacation with crystal clear waters.</p>
+    </div>
+    </div>
+
+    <div class="box">
+        <img src="photo-1496442226666-8d4d0e62e6e9.jpg" alt="Urban Adventure">
+        <div class="box1">
+        <h2>Urban Adventure</h2>
+        <p>Discover the vibrant culture and energy of the city that never sleeps.</p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

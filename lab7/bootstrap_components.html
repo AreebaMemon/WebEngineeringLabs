@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7 Task2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Task 2: Implementing Bootstrap Components
+    Create a new HTML file named bootstrap_components.html and open it in your preferred text editor.
+    Use Bootstrap components such as navigation bars, buttons, cards, forms, and alerts to design
+     a web page with interactive elements.
+    Customize the appearance and behavior of Bootstrap components using Bootstrap's predefined 
+     classes and attributes.
+    Experiment with different configurations and variations of Bootstrap components to understand 
+    their usage and versatility.
+    Save the HTML file and open it in a web browser to test the functionality and
+    styling of the Bootstrap components -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Areeba Memon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="alert alert-primary text-center" role="alert">
+        Welcome to My Portfolio! Let's Build Something Great Together.
+      </div>
+
+      <section id="about" class="text-center my-4">
+        <h2>About Me</h2>
+        <p>I am a Front-End Web Developer with expertise in HTML, CSS, and JavaScript. Passionate 
+          about creating interactive and user-friendly web experiences.</p>
+      </section>
+
+      <section id="projects" class="my-4">
+        <h2 class="text-center">Projects</h2>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <div class="card h-100" style="width: 18rem">
+  
+            <div class="card-body">
+              <h5 class="card-title">To-Do List App</h5>
+              <p class="card-text">A simple task management app with add, remove, and edit functions.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+
+          <div class="card h-100" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">A web-based calculator supporting basic arithmetic operations.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="my-4 container">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
